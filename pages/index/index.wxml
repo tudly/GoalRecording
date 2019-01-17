@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page__hd">
+  <view class="page__title">
+   <text class="title" >总运动:</text>
+   <text class="data"> {{total_takein}}</text>
+     <text class="unit">分钟</text>
+   </view>
+  <view class="page__title">
+   <text class="title">总消耗: </text>
+   <text class="data">{{total_consume}}</text>
+   <text class="unit">大卡</text>
+  </view>
+  <text style='font-size:15px;color:#AAAAAA'>友情提醒：合理运动，持续发展</text>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+           
+           <block wx:for="{{chris_list}}" wx:for-item="item" wx:key="*this">
+                <view class="weui-cell weui-cell_access">
+                  <view class="weui-cell__bd">{{item[3]}}:{{item[0]}}</view>
+                  <view class="weui-cell__ft">{{item[2]}} 分钟</view>
+                </view>
+              </block>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link"><text style="font-weight:bold;">2019 Goal小组</text></navigator>
+            </view>
+   <view class="weui-footer__text">“做自己喜欢的事情，我运动，我快乐!”</view>
+</view>
+</view>

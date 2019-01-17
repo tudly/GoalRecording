@@ -1,0 +1,7 @@
+<!--pages/first/first.wxml-->
+
+<view>
+<button type="primary" bindtap='btnClick'>{{btnText}} </button>
+</view>
+
+<text wx:if="{{!isTextShow}}">{{text}}</text>
